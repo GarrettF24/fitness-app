@@ -2,7 +2,7 @@
 
 ## Project Name
 
-The name of your project.
+fitness-app
 
 ## Project Description
 
