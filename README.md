@@ -10,14 +10,13 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Wireframe for Site] (https://whimsical.com/fitness-app-4wH5SE4Bcveoe4KyGKmWrd)
+
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+[Component Hierarchy] (https://whimsical.com/component-hierarchy-8FkCrrrJ594EeyC7wgL88F)
 
 ## API and Data Sample
-
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
 
 ```json
 {
