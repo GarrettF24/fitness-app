@@ -71,20 +71,19 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+
+- Utilize a GET, PUT, POST request 
+- Render Components to display data
+- Mobile Friendly Site
+- Create Api
+- Style with CSS
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
+- Create in app social media so users can interact
 
-- Add second API
-- Use local storage to save user favorites
 
 ## Project Schedule
 
@@ -92,11 +91,11 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
+|Aug 19 Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Aug 20| Project Approval | Incomplete
+|Aug 21-22| Core Application Structure/Create Components (HTML, CSS, etc.) | Incomplete
+|Agu 23| Pseudocode / actual code | Incomplete
+|Aug 24|  | Incomplete
 |July 16| MVP | Incomplete
 |July 17| Presentations | Incomplete
 
