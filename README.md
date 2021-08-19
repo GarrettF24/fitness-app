@@ -23,34 +23,50 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "recTXp14bE7dXvtjX",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "exercise": "deadlift",
+                "sets": 5,
+                "reps": 5,
+                "rest(sec)": 60,
+                "weight": 100
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-08-19T20:33:26.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "recgYT6EBhxDDqYxZ",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "exercise": "sh press",
+                "sets": 3,
+                "reps": 14,
+                "rest(sec)": 30,
+                "weight": 100
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-08-19T20:27:54.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "recnfnoVAcQWIKcHZ",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "exercise": "squat",
+                "sets": 3,
+                "reps": 12,
+                "rest(sec)": 60,
+                "weight": 100
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-08-19T20:27:54.000Z"
+        },
+        {
+            "id": "recz354y3gqcM1wn4",
+            "fields": {
+                "exercise": "bench press",
+                "sets": 3,
+                "reps": 10,
+                "rest(sec)": 45,
+                "weight": 100
+            },
+            "createdTime": "2021-08-19T20:27:54.000Z"
         }
-    ],
-    "offset": "recA34tOaoE1IVeC1"
+    ]
 }
 ```
 
