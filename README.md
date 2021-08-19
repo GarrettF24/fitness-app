@@ -6,7 +6,7 @@ fitness-app
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and/or functionality.
+The fitness-app is a simple tool to help users with staying motivated with their fitness routines. One of the worst things a person  can do when going to the gym is going without a plan. The fitness-app is a mobile friendly, easy to use way to plan out your workout for the day or week. A history section will be available to show your progress plus upcoming workouts. The history section will also be good for when users are seeking inspiration and wish to switch up their routines a bit.
 
 ## Wireframes
 
