@@ -96,8 +96,8 @@ This schedule will be used to keep track of your progress throughout the week an
 |Aug 21-22| Core Application Structure/Create Components (HTML, CSS, etc.) Start MVP | Incomplete
 |Agu 23| Pseudocode / actual code | Incomplete
 |Aug 24| Finish MVP  | Incomplete
-|July 16| Finalize Styling, Test App| Incomplete
-|July 17| Presentations | Incomplete
+|Aug 25| Finalize Styling, Test App| Incomplete
+|Aug 26| Presentations | Incomplete
 
 ## Timeframes
 
