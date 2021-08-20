@@ -10,11 +10,11 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 ## Wireframes
 
-[Wireframe for Site] (https://whimsical.com/fitness-app-4wH5SE4Bcveoe4KyGKmWrd)
+![Wireframe for Site] (https://whimsical.com/fitness-app-4wH5SE4Bcveoe4KyGKmWrd)
 
 ## Component Hierarchy
 
-[Component Hierarchy] (https://whimsical.com/component-hierarchy-8FkCrrrJ594EeyC7wgL88F)
+![Component Hierarchy] (https://whimsical.com/component-hierarchy-8FkCrrrJ594EeyC7wgL88F)
 
 ## API and Data Sample
 
