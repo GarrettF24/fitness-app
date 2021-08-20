@@ -80,27 +80,24 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 #### PostMVP
 
-- Create in app social media so users can interact
+- Create in app social media so users can interact and challenge each other to workouts
+- Add a Upcoming Componenent for future workouts that when checked off will be archived in
+  History Component
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
-
-| Day       | Deliverable                                                              | Status     |
-| --------- | ------------------------------------------------------------------------ | ---------- |
-| Aug 19    | Prompt / Wireframes / Priority Matrix / Timeframes                       | Complete   |
-| Aug 20    | Project Approval                                                         | Incomplete |
-| Aug 21-22 | Core Application Structure/Create Components (HTML, CSS, etc.) Start MVP | Incomplete |
-| Agu 23    | Pseudocode / actual code                                                 | Incomplete |
-| Aug 24    | Finish MVP                                                               | Incomplete |
-| Aug 25    | Finalize Styling, Test App                                               | Incomplete |
-| Aug 26    | Presentations                                                            | Incomplete |
+| Day       | Deliverable                                                        | Status     |
+| --------- | ------------------------------------------------------------------ | ---------- |
+| Aug 19    | Prompt / Wireframes / Priority Matrix / Timeframes                 | Complete   |
+| Aug 20    | Project Approval                                                   | Incomplete |
+| Aug 21-22 | Core Application Structure/Create Components. Pseudocode Start MVP | Incomplete |
+| Agu 23    | Continue with MVP Specifically functionality components            | Incomplete |
+| Aug 24    | Finish MVP                                                         | Incomplete |
+| Aug 25    | Styling, Test App                                                  | Incomplete |
+| Aug 26    | Finalize Styling, ensure app works                                 | Incomplete |
+| Aug 27    | Presentations                                                      | Incomplete |
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle. You have limited time to code all parts of your app. Your estimates can then be used to evalute possibilities based on time needed and the actual time you have before the app must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add an additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component                  | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -131,6 +128,7 @@ I feel condifent with conditional logic.
 ### Weaknesses:
 
 React is still brand new to me, having a hard time with knowing what goes where.
+CSS is still difficult as well
 
 ### Opportunities:
 
