@@ -20,8 +20,8 @@ function App() {
   }, []);
   return (
     <>
+      <Nav />
       <Route path="/" exact>
-        <Nav />
         <Form />
       </Route>
       <Route path="/history">
