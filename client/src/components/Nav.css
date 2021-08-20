@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  background-color: red;
+  font-size: small;
+}
+
+nav h1 {
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  font-size: x-large;
+}

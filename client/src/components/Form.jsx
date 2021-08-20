@@ -6,6 +6,7 @@ function Form(props) {
   const [reps, setReps] = useState(0);
   const [rest, setRest] = useState(0);
   const [weight, setWeight] = useState(0);
+
   return <h1>This is form component</h1>;
 }
 

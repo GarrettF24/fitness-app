@@ -2,6 +2,11 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 import axios from "axios";
+import Nav from "./components/Nav";
+import Form from "./components/Form";
+import { Route } from "react-router-dom";
+import History from "./components/History";
+import SocialMedia from "./components/SocialMedia";
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
@@ -13,7 +18,18 @@ function App() {
     };
     fetchWorkouts();
   }, []);
-  return <h1>This is the app component</h1>;
+  return (
+    <>
+      <Route path="/" exact>
+        <Nav />
+        <Form />
+      </Route>
+      <Route path="/history">
+        <History />
+      </Route>
+      <SocialMedia />
+    </>
+  );
 }
 
 export default App;
