@@ -77,6 +77,13 @@ The fitness-app is a simple tool to help users with staying motivated with their
 - Have all the components rendering correctly
 - Mobile Friendly Site
 - Style with CSS
+- Be a working, interactive React app
+- Utilize React Router
+- Use Axios to consume data from Airtable, and GET/render that data in your components.
+- Use Axios to POST new data on Airtable and History Component
+- Use Axios to PUT/ update new data on Airtable and Update Component
+- Use flexbox (display: flex) or CSS Grid
+- Implement responsive design on 2 screen sizes, using a media query
 
 #### PostMVP
 
