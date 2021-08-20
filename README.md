@@ -73,7 +73,7 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 #### MVP
 
-- Make it so users can view, update, and post workouts
+- Users can view, update, and post workouts
 - Have all the components rendering correctly
 - Mobile Friendly Site
 - Style with CSS
