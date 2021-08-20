@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Name
 
-## Available Scripts
+fitness-app
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+The fitness-app is a simple tool to help users with staying motivated with their fitness routines. One of the worst things a person can do when going to the gym is going without a plan. The fitness-app is a mobile friendly, easy to use way to plan out your workout for the day or week. A history section will be available to show your progress plus upcoming workouts. The history section will also be good for when users are seeking inspiration and wish to switch up their routines a bit.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Wireframe for Site] (/Users/garrettf/fitness-app/fitness-app.png)
 
-### `npm test`
+## Component Hierarchy
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Component Hierarchy] (/Users/garrettf/fitness-app/Component Hierarchy.png)
 
-### `npm run build`
+## API and Data Sample
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "records": [
+    {
+      "id": "recTXp14bE7dXvtjX",
+      "fields": {
+        "exercise": "deadlift",
+        "sets": 5,
+        "reps": 5,
+        "rest(sec)": 60,
+        "weight": 100
+      },
+      "createdTime": "2021-08-19T20:33:26.000Z"
+    },
+    {
+      "id": "recgYT6EBhxDDqYxZ",
+      "fields": {
+        "exercise": "sh press",
+        "sets": 3,
+        "reps": 14,
+        "rest(sec)": 30,
+        "weight": 100
+      },
+      "createdTime": "2021-08-19T20:27:54.000Z"
+    },
+    {
+      "id": "recnfnoVAcQWIKcHZ",
+      "fields": {
+        "exercise": "squat",
+        "sets": 3,
+        "reps": 12,
+        "rest(sec)": 60,
+        "weight": 100
+      },
+      "createdTime": "2021-08-19T20:27:54.000Z"
+    },
+    {
+      "id": "recz354y3gqcM1wn4",
+      "fields": {
+        "exercise": "bench press",
+        "sets": 3,
+        "reps": 10,
+        "rest(sec)": 45,
+        "weight": 100
+      },
+      "createdTime": "2021-08-19T20:27:54.000Z"
+    }
+  ]
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP/PostMVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP
 
-### `npm run eject`
+- Users can view, update, and post workouts
+- Have all the components rendering correctly
+- Mobile Friendly Site
+- Style with CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Create in app social media so users can interact and challenge each other to workouts
+- Add a Upcoming Componenent for future workouts that when checked off will be archived in
+  History Component
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Schedule
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Day       | Deliverable                                                        | Status     |
+| --------- | ------------------------------------------------------------------ | ---------- |
+| Aug 19    | Prompt / Wireframes / Priority Matrix / Timeframes                 | Complete   |
+| Aug 20    | Project Approval                                                   | Incomplete |
+| Aug 21-22 | Core Application Structure/Create Components. Pseudocode Start MVP | Incomplete |
+| Agu 23    | Continue with MVP Specifically functionality components            | Incomplete |
+| Aug 24    | Finish MVP                                                         | Incomplete |
+| Aug 25    | Styling, Test App                                                  | Incomplete |
+| Aug 26    | Finalize Styling, ensure app works                                 | Incomplete |
+| Aug 27    | Presentations                                                      | Incomplete |
 
-## Learn More
+## Timeframes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component                  | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Working with API           |    H     |      3hrs      |     :---:     |    :---:    |
+| Add Form                   |    H     |      3hrs      |     :---:     |    :---:    |
+| Add History                |    H     |      3hrs      |     :---:     |    :---:    |
+| Add Nav                    |    H     |      3hrs      |     :---:     |    :---:    |
+| Add Social                 |    H     |      3hrs      |     :---:     |    :---:    |
+| Add Update                 |    H     |      3hrs      |     :---:     |    :---:    |
+| Ensure Functionality works |    H     |      3hrs      |     :---:     |    :---:    |
+| Style Form                 |    H     |      3hrs      |     :---:     |    :---:    |
+| Style History              |    H     |      3hrs      |     :---:     |             |
+| Style Nav                  |    H     |      3hrs      |     :---:     |             |
+| Style Social               |    H     |      3hrs      |     :---:     |             |
+| Style Update               |    H     |      3hrs      |     :---:     |             |
+| Style App                  |    H     |      3hrs      |     :---:     |             |
+| Interactive in-app         |    L     |      5hrs      |     :---:     |             |
+| Add Upcoming               |    L     |      3hrs      |     :---:     |             |
+| Style Upcoming             |    L     |      3hrs      |     :---:     |             |
+| Total                      |          |      50hr      |               |             |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## SWOT Analysis
 
-### Code Splitting
+### Strengths:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I feel condifent with conditional logic.
 
-### Analyzing the Bundle Size
+### Weaknesses:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React is still brand new to me, having a hard time with knowing what goes where.
+CSS is still difficult as well
 
-### Making a Progressive Web App
+### Opportunities:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Strenghten React and CSS skills
 
-### Advanced Configuration
+### Threats:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+TBD
