@@ -96,7 +96,7 @@ The fitness-app is a simple tool to help users with staying motivated with their
 | Day       | Deliverable                                                        | Status     |
 | --------- | ------------------------------------------------------------------ | ---------- |
 | Aug 19    | Prompt / Wireframes / Priority Matrix / Timeframes                 | Complete   |
-| Aug 20    | Project Approval                                                   | Incomplete |
+| Aug 20    | Project Approval                                                   | Complete   |
 | Aug 21-22 | Core Application Structure/Create Components. Pseudocode Start MVP | Incomplete |
 | Agu 23    | Continue with MVP Specifically functionality components            | Incomplete |
 | Aug 24    | Finish MVP                                                         | Incomplete |
