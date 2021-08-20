@@ -93,10 +93,10 @@ This schedule will be used to keep track of your progress throughout the week an
 |---|---| ---|
 |Aug 19 Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Aug 20| Project Approval | Incomplete
-|Aug 21-22| Core Application Structure/Create Components (HTML, CSS, etc.) | Incomplete
+|Aug 21-22| Core Application Structure/Create Components (HTML, CSS, etc.) Start MVP | Incomplete
 |Agu 23| Pseudocode / actual code | Incomplete
-|Aug 24|  | Incomplete
-|July 16| MVP | Incomplete
+|Aug 24| Finish MVP  | Incomplete
+|July 16| Finalize Styling, Test App| Incomplete
 |July 17| Presentations | Incomplete
 
 ## Timeframes
@@ -109,6 +109,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Add History | 3hrs |  :---: | :---: | :---: |
+| Add Nav | 2hr |  :---: | :---: | :---: |
+| Add Social Media | 2hr |  :---: | :---: | :---: |
+| Add Update | 3hr |  :---: | :---: | :---: |
+| Ensure Functionality works | 3hrs |  :---: | :---: | :---: |
+| Style Components | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: | :---: |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
