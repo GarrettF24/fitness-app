@@ -10,11 +10,11 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 ## Wireframes
 
-![Wireframe for Site] (/Users/garrettf/fitness-app/fitness-app.png)
+![Wireframe for Site](/Users/garrettf/fitness-app/fitness-app.png)
 
 ## Component Hierarchy
 
-![Component Hierarchy] (/Users/garrettf/fitness-app/Component Hierarchy.png)
+![Component Hierarchy](/Users/garrettf/fitness-app/ComponentHierarchy.png)
 
 ## API and Data Sample
 
