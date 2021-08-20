@@ -2,14 +2,14 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import { baseURL, config } from "./services";
 import axios from "axios";
-const [workout, setWorkout] = useState([]);
 
 function App() {
+  const [workouts, setWorkouts] = useState([]);
   useEffect(() => {
     const fetchWorkouts = async () => {
       const resp = await axios.get(baseURL, config);
       console.log(resp.data);
-      setWorkout(resp.data.records);
+      setWorkouts(resp.data.records);
     };
     fetchWorkouts();
   }, []);
