@@ -1,7 +1,13 @@
 nav {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  background-color: red;
-  font-size: small;
+  justify-content: center;
+  align-items: baseline;
+  padding: 1em;
+  margin-bottom: 1em;
+  background-color: rgb(140, 139, 139);
+  color: #fff;
 }
 
 nav h1 {
