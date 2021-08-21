@@ -5,3 +5,19 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+label {
+  color: white;
+}
+
+form {
+  border: 3px solid yellow;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 15%;
+}
+
+input {
+  width: 15%;
+}
