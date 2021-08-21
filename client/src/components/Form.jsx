@@ -58,6 +58,7 @@ function Form(props) {
         type="text"
         onChange={(e) => setWeight(e.target.value)}
       />
+      <button type="button">+</button>
       <button type="submit">Create Workout</button>
     </form>
   );

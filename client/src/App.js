@@ -10,6 +10,7 @@ import SocialMedia from "./components/SocialMedia";
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
+  const [toggleFetch, setToggleFetch] = useState(false);
   useEffect(() => {
     const fetchWorkouts = async () => {
       const resp = await axios.get(baseURL, config);
@@ -17,7 +18,7 @@ function App() {
       setWorkouts(resp.data.records);
     };
     fetchWorkouts();
-  }, []);
+  }, [toggleFetch]);
   return (
     <>
       <Nav />
