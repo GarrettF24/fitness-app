@@ -89,7 +89,8 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 - Create in app social media so users can interact and challenge each other to workouts
 - Add a Upcoming Componenent for future workouts that when checked off will be archived in
-  History Component
+- History Component
+- Info Component that delves deeper into kinesiology of workingout. Joint movement, Frontal, Lateral, Traverse planes. Emphasis on Joint Balance and proper nutrition. Articles on what workout fads will destroy your body all while making you feel stronger(Crossfit)
 
 ## Project Schedule
 
