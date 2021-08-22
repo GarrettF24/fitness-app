@@ -91,6 +91,7 @@ The fitness-app is a simple tool to help users with staying motivated with their
 - Add a Upcoming Componenent for future workouts that when checked off will be archived in History Component
 - Info Component that delves deeper into kinesiology of workingout. Joint movement, Frontal, Lateral, Traverse planes. Emphasis on Joint Balance and proper nutrition. Articles on what workout fads will destroy your body all while making you feel stronger(Crossfit)
 - Include a visual representation of human body on form component. As the user inputs exercises the muscles worked will start shading in at green. The more exercises put in that workout that targets those muscle groups the the shading will go from green-yellow-red. Red indicating you are potentially over targeting said muscle group. Input fields will include Joint movement, single or multi joint, muscle groups engaged.
+- Warm up and Cool down will be a suggested feature that will take into account muscle groups worked and suggest stretches the user should do when beginning or done with the workout.
 
 ## Project Schedule
 
