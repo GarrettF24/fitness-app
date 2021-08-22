@@ -7,6 +7,7 @@ import Form from "./components/Form";
 import { Route } from "react-router-dom";
 import History from "./components/History";
 import SocialMedia from "./components/SocialMedia";
+import Update from "./components/Update";
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
@@ -27,6 +28,10 @@ function App() {
       </Route>
       <Route path="/history">
         <History workouts={workouts} />
+      </Route>
+      {/* need to figure out id with this. */}
+      <Route path="/update">
+        <Update />
       </Route>
       <SocialMedia />
     </>

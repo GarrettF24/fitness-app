@@ -1,5 +1,5 @@
 import Update from "./Update";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./History.css";
 
 function History(props) {
@@ -21,7 +21,6 @@ function History(props) {
               <Link to="/update">
                 <button>Update</button>
               </Link>
-              <Update />
               {/* </Route> */}
             </article>
           </>

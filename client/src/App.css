@@ -4,7 +4,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: initial;
 }
 
 label {
@@ -20,5 +19,5 @@ form {
 }
 
 input {
-  width: 20%;
+  width: 15%;
 }
