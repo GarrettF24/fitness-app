@@ -17,12 +17,12 @@ function History(props) {
                 Exercise: {exercise} | Sets: {sets} | Reps: {reps} | Rest:
                 {rest}| Weight: {weight}
               </p>
-              <Route path="/update">
-                <Link to="/update">
-                  <button>Update</button>
-                </Link>
-                <Update />
-              </Route>
+              {/* <Route path="/update"> */}
+              <Link to="/update">
+                <button>Update</button>
+              </Link>
+              <Update />
+              {/* </Route> */}
             </article>
           </>
         );

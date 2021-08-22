@@ -19,6 +19,7 @@ function Form(props) {
       weight,
     };
     await axios.post(baseURL, { fields: newWorkout }, config);
+    props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
   };
 
   return (
@@ -44,7 +45,7 @@ function Form(props) {
         type="text"
         onChange={(e) => setReps(e.target.value)}
       />
-      <label htmlFor="rest">Rest(sec)</label>
+      <label htmlFor="rest">Rest</label>
       <input
         id="rest"
         value={rest}

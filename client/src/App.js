@@ -23,17 +23,11 @@ function App() {
     <>
       <Nav />
       <Route path="/" exact>
-        <Form />
+        <Form setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/history">
         <History workouts={workouts} />
       </Route>
-      {/* <Route path="/update/:id">
-        <h1>
-          This will be the update component accessed by clicking on history
-          update button. I think this will go in history.
-        </h1>
-      </Route> */}
       <SocialMedia />
     </>
   );
