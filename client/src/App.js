@@ -29,7 +29,7 @@ function App() {
       <Route path="/history">
         <History workouts={workouts} />
       </Route>
-      {/* need to figure out id with this. */}
+      {/* need to figure out id with this. First need to group exercises into workouts */}
       <Route path="/update">
         <Update />
       </Route>
