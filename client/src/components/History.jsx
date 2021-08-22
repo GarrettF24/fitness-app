@@ -1,5 +1,6 @@
 // import Update from "./Update";
 // import { Link, Route } from "react-router-dom";
+import "./History.css";
 
 function History(props) {
   const { workouts } = props;
@@ -14,13 +15,17 @@ function History(props) {
       </Route> */}
       {workouts.map((workout, index) => {
         const { exercise, sets, reps, rest, weight } = workout.fields;
-        <article>
-          <p>{exercise}</p>
-          <p>{sets}</p>
-          <p>{reps}</p>
-          <p>{rest}</p>
-          <p>{weight}</p>
-        </article>;
+        return (
+          <div>
+            <article>
+              {/* Need to store each object into an array to respresent each workout */}
+              <p>
+                Exercise: {exercise} | Sets: {sets} | Reps: {reps} | Rest:
+                {rest}| Weight: {weight}
+              </p>
+            </article>
+          </div>
+        );
       })}
     </>
   );
