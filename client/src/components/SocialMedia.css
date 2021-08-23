@@ -1,7 +1,7 @@
 .footer {
   display: flex;
-  margin-top: 1em;
-  padding: 1em;
+  margin-top: 0.5em;
+  padding: 0.5em;
   background-color: rgb(154, 153, 149);
   position: fixed;
   bottom: 0;

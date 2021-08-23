@@ -6,7 +6,6 @@ function History(props) {
   const { workouts } = props;
   return (
     <>
-      <h1>This is the history component</h1>
       <div className="workouts">
         {workouts.map((workout) => {
           // console.log(workout.createdTime);
