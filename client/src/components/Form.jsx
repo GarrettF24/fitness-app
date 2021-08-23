@@ -1,13 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
+import { useParams, useHistory } from "react-router-dom";
 
 function Form(props) {
   const [exercise, setExercise] = useState("");
-  const [sets, setSets] = useState(0);
-  const [reps, setReps] = useState(0);
-  const [rest, setRest] = useState(0);
-  const [weight, setWeight] = useState(0);
+  const [sets, setSets] = useState("");
+  const [reps, setReps] = useState("");
+  const [rest, setRest] = useState("");
+  const [weight, setWeight] = useState("");
+  const params = useParams();
+  let history = useHistory();
+
+  useEffect(() => {
+    if (params.id && props.workouts.length) {
+      const workoutToEdit = props.workouts.find(
+        (workout) => params.id === workout.id
+      );
+      if (workoutToEdit) {
+        setExercise(workoutToEdit.fields.exercise);
+        setSets(workoutToEdit.fields.sets);
+        setReps(workoutToEdit.fields.reps);
+        setRest(workoutToEdit.fields.rest);
+        setWeight(workoutToEdit.fields.weight);
+      }
+    }
+  }, [params.id, props.workouts]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,7 +36,21 @@ function Form(props) {
       rest,
       weight,
     };
-    await axios.post(baseURL, { fields: newWorkout }, config);
+    if (params.id) {
+      await axios.put(
+        `${baseURL}/${params.id}`,
+        { fields: newWorkout },
+        config
+      );
+      history.push("/history");
+    } else {
+      await axios.post(baseURL, { fields: newWorkout }, config);
+      setExercise("");
+      setSets("");
+      setReps("");
+      setRest("");
+      setWeight("");
+    }
     props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
   };
 

@@ -8,7 +8,7 @@ function History(props) {
     <>
       <h1>This is the history component</h1>
       <div className="workouts">
-        {workouts.map((workout, index) => {
+        {workouts.map((workout) => {
           const { exercise, sets, reps, rest, weight } = workout.fields;
           return (
             <>
@@ -18,7 +18,7 @@ function History(props) {
                   Exercise: {exercise} | Sets: {sets} | Reps: {reps} | Rest:
                   {rest}| Weight: {weight}
                 </p>
-                <Link to="/update/:id">
+                <Link to={`/update/${workout.id}`}>
                   <button>Update</button>
                 </Link>
                 <input type="checkbox" />

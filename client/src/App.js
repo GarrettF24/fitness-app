@@ -31,7 +31,7 @@ function App() {
       </Route>
       {/* need to figure out id with this. First need to group exercises into workouts */}
       <Route path="/update/:id">
-        <Update workouts={workouts} />
+        <Form workouts={workouts} setToggleFetch={setToggleFetch} />
       </Route>
       <SocialMedia />
     </>

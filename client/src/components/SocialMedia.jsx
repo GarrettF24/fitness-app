@@ -9,13 +9,13 @@ const SocialMedia = () => (
   <div className="footer">
     <p>Post your Achievements!</p>
     <div className="icons">
-      <a href="https://www.facebook.com" target="_blank">
+      <a rel="noreferrer" href="https://www.facebook.com" target="_blank">
         <FontAwesomeIcon icon={faFacebookF} />
       </a>
-      <a href="https://www.twitter.com" target="_blank">
+      <a rel="noreferrer" href="https://www.twitter.com" target="_blank">
         <FontAwesomeIcon icon={faTwitter} />
       </a>
-      <a href="https://www.instagram.com" target="_blank">
+      <a rel="noreferrer" href="https://www.instagram.com" target="_blank">
         <FontAwesomeIcon icon={faInstagram} />
       </a>
     </div>
