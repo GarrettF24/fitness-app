@@ -9,6 +9,12 @@ article {
 }
 
 button {
-  width: 10%;
   font-size: 0.7em;
+}
+
+td,
+th {
+  border: 1px solid red;
+  background: rgb(114, 114, 114);
+  border-radius: 5px;
 }
