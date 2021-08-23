@@ -8,6 +8,8 @@ import { Route } from "react-router-dom";
 import History from "./components/History";
 import SocialMedia from "./components/SocialMedia";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   const [workouts, setWorkouts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);

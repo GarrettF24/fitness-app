@@ -1,11 +1,9 @@
-body {
-  color: white;
-}
-
-article {
-  border: 5px solid salmon;
-  width: 30%;
-  font-size: 0.7em;
+#root {
+  background: url("https://coolwallpapers.me/th700/5100308-weightlifting-dark-minimal-art-4k-8k.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 button {
@@ -17,4 +15,17 @@ th {
   border: 1px solid red;
   background: rgb(114, 114, 114);
   border-radius: 5px;
+  color: white;
+}
+
+.workouts {
+  width: 40%;
+  color: white;
+  margin: 0 auto;
+}
+
+Table {
+  width: 10%;
+  font-size: 0.7em;
+  flex: display;
 }
