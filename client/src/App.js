@@ -7,7 +7,6 @@ import Form from "./components/Form";
 import { Route } from "react-router-dom";
 import History from "./components/History";
 import SocialMedia from "./components/SocialMedia";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

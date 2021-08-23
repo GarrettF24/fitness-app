@@ -98,9 +98,3 @@ function Form(props) {
 }
 
 export default Form;
-//add labels for now
-//form tag inputs inside
-//one row to start
-//flex for inputs
-//handleSubmit
-//onsubmit on form itself.
