@@ -1,3 +1,14 @@
 body {
   color: white;
 }
+
+article {
+  border: 5px solid salmon;
+  width: 30%;
+  font-size: 0.7em;
+}
+
+button {
+  width: 10%;
+  font-size: 0.7em;
+}

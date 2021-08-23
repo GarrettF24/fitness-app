@@ -21,3 +21,7 @@ form {
 input {
   width: 15%;
 }
+
+.workouts {
+  border: 3px solid greenyellow;
+}

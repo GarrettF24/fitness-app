@@ -21,6 +21,7 @@ function History(props) {
                 <Link to="/update/:id">
                   <button>Update</button>
                 </Link>
+                <input type="checkbox" />
               </article>
             </>
           );
