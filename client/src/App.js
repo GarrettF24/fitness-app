@@ -30,8 +30,8 @@ function App() {
         <History workouts={workouts} />
       </Route>
       {/* need to figure out id with this. First need to group exercises into workouts */}
-      <Route path="/update">
-        <Update />
+      <Route path="/update/:id">
+        <Update workouts={workouts} />
       </Route>
       <SocialMedia />
     </>

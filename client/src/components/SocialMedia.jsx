@@ -1,9 +1,24 @@
 import React from "react";
 import "./SocialMedia.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const SocialMedia = () => (
   <div className="footer">
-    <p>This is some content in sticky footer</p>
+    <p>Post your Achievements!</p>
+    <div className="icons">
+      <a href="https://www.facebook.com" target="_blank">
+        <FontAwesomeIcon icon={faFacebookF} />
+      </a>
+      <a href="https://www.twitter.com" target="_blank">
+        <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+    </div>
   </div>
 );
 

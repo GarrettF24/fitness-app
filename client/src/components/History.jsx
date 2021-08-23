@@ -7,25 +7,25 @@ function History(props) {
   return (
     <>
       <h1>This is the history component</h1>
-      {workouts.map((workout, index) => {
-        const { exercise, sets, reps, rest, weight } = workout.fields;
-        return (
-          <>
-            <article>
-              {/* Need to store each object into an array to respresent each workout */}
-              <p>
-                Exercise: {exercise} | Sets: {sets} | Reps: {reps} | Rest:
-                {rest}| Weight: {weight}
-              </p>
-              {/* <Route path="/update"> */}
-              <Link to="/update">
-                <button>Update</button>
-              </Link>
-              {/* </Route> */}
-            </article>
-          </>
-        );
-      })}
+      <div className="workouts">
+        {workouts.map((workout, index) => {
+          const { exercise, sets, reps, rest, weight } = workout.fields;
+          return (
+            <>
+              <article>
+                {/* Need to store each object into an array to respresent each workout */}
+                <p>
+                  Exercise: {exercise} | Sets: {sets} | Reps: {reps} | Rest:
+                  {rest}| Weight: {weight}
+                </p>
+                <Link to="/update/:id">
+                  <button>Update</button>
+                </Link>
+              </article>
+            </>
+          );
+        })}
+      </div>
     </>
   );
 }
