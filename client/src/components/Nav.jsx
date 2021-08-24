@@ -10,7 +10,7 @@ function Nav(props) {
         <h1>Fitness-App</h1>
         <div className="test">
           <FontAwesomeIcon icon={faCaretDown} />
-          <div class="dropdown-content">
+          <div className="dropdown-content">
             <Link to="/">Home</Link>
             <Link to="/history">History</Link>
           </div>

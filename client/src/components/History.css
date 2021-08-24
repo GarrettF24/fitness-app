@@ -5,15 +5,15 @@
   -o-background-size: cover;
   background-size: cover;
 }
-
+h4 {
+  color: white;
+}
 button {
   font-size: 0.7em;
 }
 
 td,
 th {
-  /* background: rgb(114, 114, 114); */
-  border-radius: 10px;
   color: white;
 }
 
@@ -23,14 +23,14 @@ th {
   margin: 0 auto;
 }
 
-Table {
+.table {
   width: 30%;
   font-size: 0.7em;
   flex: display;
 }
 
 @media only screen and (max-width: 600px) {
-  Table {
+  table {
     width: 10%;
     font-size: xx-small;
   }

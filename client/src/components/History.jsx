@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./History.css";
 import { Table } from "react-bootstrap";
 import TableRow from "../components/TableRow";
@@ -29,14 +28,19 @@ function History(props) {
     setTableInfo(Object.values(tableObj));
   }, [workouts]);
 
-  let heading = ["Exericse", "Reps", "Rest", "Sets", "Weight"];
+  let heading = ["Exercise", "Reps", "Rest", "Sets", "Weight"];
 
   return (
     <>
       <div>
         {tableInfo.map((table) => (
           <>
-            <h3>{table[0].createdTime.split("T")[0]}</h3>
+            <h4>
+              {table[0].createdTime.split("T")[0]}{" "}
+              <span>
+                <input type="checkbox" />
+              </span>
+            </h4>
             <Table striped bordered hover>
               <thead>
                 <tr>
