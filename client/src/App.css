@@ -1,4 +1,4 @@
-html {
+#root {
   background: url("https://coolwallpapers.me/th700/5100308-weightlifting-dark-minimal-art-4k-8k.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,7 +24,7 @@ input {
 
 .workouts {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 

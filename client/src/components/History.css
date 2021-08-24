@@ -23,8 +23,20 @@ th {
   margin: 0 auto;
 }
 
-/* Table {
-  width: 10%;
+Table {
+  width: 30%;
   font-size: 0.7em;
   flex: display;
-} */
+}
+
+@media only screen and (max-width: 600px) {
+  Table {
+    width: 10%;
+    font-size: xx-small;
+  }
+
+  .workouts {
+    width: 30%;
+    margin-left: 0;
+  }
+}
