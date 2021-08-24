@@ -27,3 +27,7 @@ input {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+#root {
+  width: 100%;
+}

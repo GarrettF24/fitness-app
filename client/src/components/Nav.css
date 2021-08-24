@@ -40,3 +40,15 @@ nav {
   width: 75px;
   height: 50px;
 }
+svg {
+  height: 25px;
+}
+
+/* svg:hover {
+  transform: rotate(270deg);
+} */
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}

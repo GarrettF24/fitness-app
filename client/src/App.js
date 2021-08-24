@@ -29,7 +29,6 @@ function App() {
       <Route path="/history">
         <History workouts={workouts} />
       </Route>
-      {/* need to figure out id with this. First need to group exercises into workouts */}
       <Route path="/update/:id">
         <Form workouts={workouts} setToggleFetch={setToggleFetch} />
       </Route>
