@@ -9,6 +9,9 @@
 
 label {
   color: white;
+  border: 1px solid;
+  display: flex;
+  padding-top: 12px;
 }
 
 form {
@@ -43,6 +46,8 @@ input {
   }
   label {
     font-size: xx-small;
+    border: none;
+    width: 30%;
   }
   input {
     width: 30%;
