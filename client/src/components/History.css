@@ -17,6 +17,19 @@ th {
   color: white;
 }
 
+tr {
+  text-align: left;
+  padding: 0px;
+}
+
+.tableDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-left: 10px;
+}
+
 .workouts {
   width: 40%;
   color: white;
@@ -30,9 +43,13 @@ th {
 }
 
 @media only screen and (max-width: 600px) {
-  table {
+  #root {
+    height: 100%;
+  }
+  .tableDiv {
     width: 10%;
     font-size: xx-small;
+    margin-left: 25px;
   }
 
   .workouts {

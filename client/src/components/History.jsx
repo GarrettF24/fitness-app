@@ -32,7 +32,7 @@ function History(props) {
 
   return (
     <>
-      <div>
+      <div className="tableDiv">
         {tableInfo.map((table) => (
           <>
             <h4>
