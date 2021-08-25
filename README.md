@@ -99,9 +99,9 @@ The fitness-app is a simple tool to help users with staying motivated with their
 | --------- | ------------------------------------------------------------------ | ---------- |
 | Aug 19    | Prompt / Wireframes / Priority Matrix / Timeframes                 | Complete   |
 | Aug 20    | Project Approval                                                   | Complete   |
-| Aug 21-22 | Core Application Structure/Create Components. Pseudocode Start MVP | Incomplete |
-| Agu 23    | Continue with MVP Specifically functionality components            | Incomplete |
-| Aug 24    | Finish MVP                                                         | Incomplete |
+| Aug 21-22 | Core Application Structure/Create Components. Pseudocode Start MVP | Complete   |
+| Agu 23    | Continue with MVP Specifically functionality components            | Complete   |
+| Aug 24    | Finish MVP                                                         | Complete   |
 | Aug 25    | Styling, Test App                                                  | Incomplete |
 | Aug 26    | Finalize Styling, ensure app works                                 | Incomplete |
 | Aug 27    | Presentations                                                      | Incomplete |
@@ -110,23 +110,23 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 | Component                  | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Working with API           |    H     |      3hrs      |     :---:     |    :---:    |
-| Add Form                   |    H     |      3hrs      |     :---:     |    :---:    |
-| Add History                |    H     |      3hrs      |     :---:     |    :---:    |
-| Add Nav                    |    H     |      3hrs      |     :---:     |    :---:    |
-| Add Social                 |    H     |      3hrs      |     :---:     |    :---:    |
-| Add Update                 |    H     |      3hrs      |     :---:     |    :---:    |
-| Ensure Functionality works |    H     |      3hrs      |     :---:     |    :---:    |
-| Style Form                 |    H     |      3hrs      |     :---:     |    :---:    |
-| Style History              |    H     |      3hrs      |     :---:     |             |
-| Style Nav                  |    H     |      3hrs      |     :---:     |             |
-| Style Social               |    H     |      3hrs      |     :---:     |             |
-| Style Update               |    H     |      3hrs      |     :---:     |             |
-| Style App                  |    H     |      3hrs      |     :---:     |             |
+| Working with API           |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Add Form                   |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Add History                |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Add Nav                    |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Add Social                 |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Add TableRow               |    H     |      3hrs      |      1hr      |    1hrs     |
+| Ensure Functionality works |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Style Form                 |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Style History              |    H     |      3hrs      |     5hrs      |    5hrs     |
+| Style Nav                  |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Style Social               |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Style TableRow             |    H     |      3hrs      |      N/N      |     N/N     |
+| Style App                  |    H     |      3hrs      |     3hrs      |    3hrs     |
 | Interactive in-app         |    L     |      5hrs      |     :---:     |             |
 | Add Upcoming               |    L     |      3hrs      |     :---:     |             |
 | Style Upcoming             |    L     |      3hrs      |     :---:     |             |
-| Total                      |          |      50hr      |               |             |
+| Total                      |          |      50hr      |     33hrs     |    33hrs    |
 
 ## SWOT Analysis
 
