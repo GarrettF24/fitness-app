@@ -7,6 +7,14 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
 
 label {
@@ -16,16 +24,48 @@ label {
   padding-top: 12px;
 }
 
-form {
+.form {
   /* border: 3px solid yellow; */
   display: flex;
   width: 70%;
   margin: 0 auto;
   margin-top: 15%;
 }
+.form button {
+  /* background-color: #08d; */
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  /* color: #eee; */
+  cursor: pointer;
+  font-size: 10px;
+  height: 40px;
+  /* margin-top: 38px; */
+  /* outline: 0; */
+  text-align: center;
+  width: 10%;
+}
 
 input {
-  width: 15%;
+  background-color: #5f6069;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 10px;
+  height: 40px;
+  /* outline: 0; */
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+#exercise {
+  width: 160px;
 }
 
 .workouts {
@@ -34,28 +74,22 @@ input {
   flex-wrap: wrap;
 }
 
-#root {
-  width: 100%;
-}
-
 @media only screen and (max-width: 600px) {
-  form {
+  .form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 95%;
     height: 20%;
+    align-items: center;
   }
-  label {
-    font-size: xx-small;
-    border: none;
+
+  .form input {
     width: 30%;
+    margin: 5px 0px;
   }
-  input {
-    width: 30%;
-  }
-  button {
-    font-size: 5px;
+  .form button {
+    font-size: 10px;
     width: 30%;
   }
 }
