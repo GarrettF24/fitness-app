@@ -1,8 +1,6 @@
 # Project Overview
 
-## Project Name
-
-fitness-app
+## Fitness-App
 
 ## Project Description
 

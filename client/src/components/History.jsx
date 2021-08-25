@@ -36,7 +36,7 @@ function History(props) {
         {tableInfo.map((table) => (
           <div className="date-table-container">
             <h4>
-              {table[0].createdTime.split("T")[0]}{" "}
+              {table[0].createdTime.split("T")[0]}
               <span>
                 <input type="checkbox" />
               </span>

@@ -44,7 +44,7 @@ label {
   font-size: 10px;
   height: 40px;
   padding: 4px 20px 0;
-  width: 7%;
+  width: 8%;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ label {
   font-size: 10px;
   height: 40px;
   text-align: center;
-  width: 5%;
+  width: 8%;
 }
 
 @media only screen and (max-width: 600px) {
