@@ -1,14 +1,8 @@
-h4 {
-  color: white;
-}
-button {
-  font-size: 0.7em;
-}
-
 td,
 th {
   color: white;
   padding: 2px;
+  box-shadow: none;
 }
 
 tr {
@@ -44,11 +38,11 @@ tr a {
   display: flex;
   flex-direction: column;
   margin: 0 10px;
+  color: white;
 }
 
 .date-table-container input[type="checkbox"] {
   width: 20px;
-  /* margin-top: ; */
 }
 
 .workouts {
@@ -88,7 +82,7 @@ tr a {
     flex-direction: column;
     width: 10%;
     font-size: xx-small;
-    margin-left: 35px;
+    margin-left: 45px;
   }
 
   .workouts {

@@ -28,28 +28,14 @@ label {
 }
 
 .form {
-  /* border: 3px solid yellow; */
   display: flex;
   width: 70%;
   margin: 0 auto;
   margin-top: 15%;
-}
-.form button {
-  /* background-color: #08d; */
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  /* color: #eee; */
-  cursor: pointer;
-  font-size: 10px;
-  height: 40px;
-  /* margin-top: 38px; */
-  /* outline: 0; */
-  text-align: center;
-  width: 10%;
+  justify-content: center;
 }
 
-input {
+.form input {
   background-color: #5f6069;
   border-radius: 12px;
   border: 0;
@@ -57,9 +43,9 @@ input {
   color: #eee;
   font-size: 10px;
   height: 40px;
-  /* outline: 0; */
   padding: 4px 20px 0;
-  width: 100%;
+  width: 7%;
+  text-align: center;
 }
 
 ::-webkit-input-placeholder {
@@ -71,27 +57,18 @@ input {
   width: 160px;
 }
 
-.workouts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.form button {
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 10px;
+  height: 40px;
+  text-align: center;
+  width: 5%;
 }
 
 @media only screen and (max-width: 600px) {
-  #root {
-    background: url("https://coolwallpapers.me/th700/5100308-weightlifting-dark-minimal-art-4k-8k.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
   .form {
     display: flex;
     flex-direction: column;

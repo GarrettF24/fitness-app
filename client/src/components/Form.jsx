@@ -12,6 +12,9 @@ function Form(props) {
   const params = useParams();
   let history = useHistory();
 
+  const formH1 = `Create Workout`;
+  const updateH1 = `Update Workout`;
+
   useEffect(() => {
     if (params.id && props.workouts.length) {
       const workoutToEdit = props.workouts.find(
