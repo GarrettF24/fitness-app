@@ -60,7 +60,6 @@ function Form(props) {
         <h1>Create a Workout</h1>
       </div>
       <form className="form" onSubmit={handleSubmit}>
-        {/* <label htmlFor="exercise">Exercise</label> */}
         <input
           placeholder="Exercise"
           id="exercise"
@@ -68,7 +67,6 @@ function Form(props) {
           type="text"
           onChange={(e) => setExercise(e.target.value)}
         />
-        {/* <label htmlFor="sets">Sets</label> */}
         <input
           placeholder="Sets"
           id="sets"
@@ -76,7 +74,6 @@ function Form(props) {
           type="text"
           onChange={(e) => setSets(e.target.value)}
         />
-        {/* <label htmlFor="reps">Reps</label> */}
         <input
           placeholder="Reps"
           id="reps"
@@ -84,7 +81,6 @@ function Form(props) {
           type="text"
           onChange={(e) => setReps(e.target.value)}
         />
-        {/* <label htmlFor="rest">Rest</label> */}
         <input
           placeholder="Rest"
           id="rest"
@@ -92,7 +88,6 @@ function Form(props) {
           type="text"
           onChange={(e) => setRest(e.target.value)}
         />
-        {/* <label htmlFor="weight">Weight</label> */}
         <input
           placeholder="Weight"
           id="weight"
@@ -100,7 +95,6 @@ function Form(props) {
           type="text"
           onChange={(e) => setWeight(e.target.value)}
         />
-        {/* <button type="button">+</button> */}
         <button type="submit">Create Workout</button>
       </form>
     </>
