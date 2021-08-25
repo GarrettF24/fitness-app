@@ -37,9 +37,9 @@ function History(props) {
           <div className="date-table-container">
             <h4>
               {table[0].createdTime.split("T")[0]}
-              <span>
+              <div className="checkbox">
                 <input type="checkbox" />
-              </span>
+              </div>
             </h4>
             <Table striped bordered hover>
               <thead>

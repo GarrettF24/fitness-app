@@ -2,7 +2,6 @@ td,
 th {
   color: white;
   padding: 2px;
-  box-shadow: none;
 }
 
 tr a {
@@ -37,8 +36,10 @@ tr a {
   color: white;
 }
 
-.date-table-container input[type="checkbox"] {
+.date-table-container .checkbox {
+  display: inline;
   width: 20px;
+  padding: 0px 10px;
 }
 
 .workouts {
