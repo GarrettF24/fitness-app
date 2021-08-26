@@ -8,7 +8,7 @@ function History(props) {
   const { workouts } = props;
 
   useEffect(() => {
-    //date = each workout return the date so only year/month/day is shown.
+    // This creates an arr of unique dates
     const dates = [
       ...new Set(
         workouts.map((workout) => {
@@ -19,13 +19,17 @@ function History(props) {
 
     const tableObj = {};
     dates.forEach((date) => {
-      //returns a workout if the date is equalled to the workouts createdTime split at T, so date(year/month/day) === match(year/month/day)
+      //Creates key of date, filtering thru W/O only bringing back objects that match date.
+      //map thru unique arr dates, feed the empty tableObj a key of that date and val an arr of objs that match date.
+      //Next map thru the arr of unique dates to feed the empty obj (tableObj) both a key of dates and an arr of objs w/ matching
+      // dates as its value
       tableObj[date] = workouts.filter((workout) => {
         let match = workout.createdTime.split("T")[0];
         return date === match;
       });
     });
-    //sets the tableInfo to the values of the tableObj
+    //sets the tableInfo state to the values of the tableObj
+    //next we set tableInfo state w/ just the vals of the tableObj(arr of arrs)
     setTableInfo(Object.values(tableObj));
     //rerenders if workouts is present.
   }, [workouts]);
@@ -38,10 +42,8 @@ function History(props) {
         <h1>View Past and Upcoming Workouts</h1>
       </div>
       <div className="tableDiv">
-        {/* create a table for each element in tableInfo */}
         {tableInfo.map((table) => (
           <div className="date-table-container">
-            {/* The title will be tables createdTime split as T and selects the 0 element. So year/month/day followed by checkbox */}
             <h4>
               {table[0].createdTime.split("T")[0]}
               <div className="checkbox">{/* <input type="checkbox" /> */}</div>
@@ -49,7 +51,6 @@ function History(props) {
             <Table striped bordered hover>
               <thead>
                 <tr>
-                  {/* has one of each of the elements in heading array in row for table heading */}
                   {heading.map((head) => (
                     <th>{head}</th>
                   ))}
