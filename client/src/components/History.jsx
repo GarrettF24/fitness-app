@@ -34,7 +34,7 @@ function History(props) {
     //rerenders if workouts is present.
   }, [workouts]);
 
-  let heading = ["Exercise", "Reps", "Rest", "Sets", "Weight"];
+  let heading = ["Exercise", "Sets", "Reps", "Rest", "Weight"];
 
   return (
     <>
@@ -57,7 +57,6 @@ function History(props) {
                 </tr>
               </thead>
               <tbody>
-                {/* Each row is equal to the value of the TableRow td's. */}
                 {table.map((row) => (
                   <TableRow row={row} />
                 ))}

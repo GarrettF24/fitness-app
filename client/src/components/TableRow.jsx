@@ -10,9 +10,9 @@ export default function TableRow(props) {
       <Link id="update-link" to={`/update/${props.row.id}`}>
         <td>{exercise}</td>
       </Link>
+      <td>{sets}</td>
       <td>{reps}</td>
       <td>{rest}</td>
-      <td>{sets}</td>
       <td>{weight}</td>
     </tr>
   );
