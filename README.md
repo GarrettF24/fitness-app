@@ -100,8 +100,8 @@ The fitness-app is a simple tool to help users with staying motivated with their
 | Aug 21-22 | Core Application Structure/Create Components. Pseudocode Start MVP | Complete   |
 | Agu 23    | Continue with MVP Specifically functionality components            | Complete   |
 | Aug 24    | Finish MVP                                                         | Complete   |
-| Aug 25    | Styling, Test App                                                  | Incomplete |
-| Aug 26    | Finalize Styling, ensure app works                                 | Incomplete |
+| Aug 25    | Styling, Test App                                                  | Complete   |
+| Aug 26    | Finalize Styling, ensure app works                                 | Complete   |
 | Aug 27    | Presentations                                                      | Incomplete |
 
 ## Timeframes
