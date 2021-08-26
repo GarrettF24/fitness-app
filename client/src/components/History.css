@@ -1,3 +1,10 @@
+#history-title {
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 td,
 th {
   color: white;
@@ -73,6 +80,9 @@ tr a {
 }
 
 @media only screen and (max-width: 600px) {
+  #history-title h1 {
+    font-size: medium;
+  }
   #root {
     height: 100%;
   }

@@ -1,5 +1,4 @@
-import { Form } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import "./SignUp.css";
 
 function SignUp(props) {

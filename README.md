@@ -121,10 +121,12 @@ The fitness-app is a simple tool to help users with staying motivated with their
 | Style Social               |    H     |      3hrs      |     2hrs      |    2hrs     |
 | Style TableRow             |    H     |      3hrs      |      N/N      |     N/N     |
 | Style App                  |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Add SignUp                 |    L     |      2hrs      |      1hr      |     1hr     |
+| Style SignUp               |    L     |      2hrs      |      1hr      |     1hr     |
 | Interactive in-app         |    L     |      5hrs      |     :---:     |             |
 | Add Upcoming               |    L     |      3hrs      |     :---:     |             |
 | Style Upcoming             |    L     |      3hrs      |     :---:     |             |
-| Total                      |          |      50hr      |     33hrs     |    33hrs    |
+| Total                      |          |      54hr      |     35hrs     |    35hrs    |
 
 ## SWOT Analysis
 

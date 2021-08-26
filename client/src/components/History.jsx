@@ -32,6 +32,9 @@ function History(props) {
 
   return (
     <>
+      <div id="history-title">
+        <h1>View Past and Upcoming Workouts</h1>
+      </div>
       <div className="tableDiv">
         {tableInfo.map((table) => (
           <div className="date-table-container">
