@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./TableRow.css";
 
 export default function TableRow(props) {
-  const { exercise, reps, rest, sets, weight } = props.row.fields;
+  const { exercise, sets, reps, rest, weight } = props.row.fields;
 
   return (
     <tr>

@@ -11,7 +11,7 @@ function Nav(props) {
         <Link to="/signup">
           <Button id="sign-in" variant="dark">
             Sign-in
-          </Button>{" "}
+          </Button>
         </Link>
         <h1>Fitness-App</h1>
         <div className="test">

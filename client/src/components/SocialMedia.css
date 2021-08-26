@@ -17,6 +17,10 @@
   color: white;
 }
 
+.footer a:visited {
+  color: white;
+}
+
 .footer p {
   display: flex;
   align-items: center;

@@ -13,6 +13,7 @@ import SignUp from "./components/SignUp";
 function App() {
   const [workouts, setWorkouts] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
+
   useEffect(() => {
     const fetchWorkouts = async () => {
       const resp = await axios.get(baseURL, config);
@@ -21,6 +22,7 @@ function App() {
     };
     fetchWorkouts();
   }, [toggleFetch]);
+
   return (
     <>
       <Nav />

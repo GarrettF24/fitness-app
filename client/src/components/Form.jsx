@@ -4,6 +4,7 @@ import { baseURL, config } from "../services";
 import { useParams, useHistory } from "react-router-dom";
 
 function Form(props) {
+  //setState here
   const [exercise, setExercise] = useState("");
   const [sets, setSets] = useState("");
   const [reps, setReps] = useState("");
@@ -12,14 +13,14 @@ function Form(props) {
   const params = useParams();
   let history = useHistory();
 
-  const formH1 = `Create Workout`;
-  const updateH1 = `Update Workout`;
-
   useEffect(() => {
+    //If params.id and the workouts are true (present).
     if (params.id && props.workouts.length) {
       const workoutToEdit = props.workouts.find(
+        //find the workout with params id equal to workout id. this is the workoutToEdit
         (workout) => params.id === workout.id
       );
+      //If there is a workoutToEdit the states will equal the current values and user can update the state from there.
       if (workoutToEdit) {
         setExercise(workoutToEdit.fields.exercise);
         setSets(workoutToEdit.fields.sets);
@@ -28,10 +29,12 @@ function Form(props) {
         setWeight(workoutToEdit.fields.weight);
       }
     }
+    //useEffect will be triggered and Form will rerender when params.id and props.workout changes.
   }, [params.id, props.workouts]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    // onSubmit the newWorkout is created with each of the below getting a value that was assigned in the form.
     const newWorkout = {
       exercise,
       sets,
@@ -39,14 +42,18 @@ function Form(props) {
       rest,
       weight,
     };
+    //if params.id value is true(present)
     if (params.id) {
+      // PUT/update the specified params id's newWorkout values
       await axios.put(
         `${baseURL}/${params.id}`,
         { fields: newWorkout },
         config
       );
+      //The updated NewWorkout object gets pushed to /history route, in this case the History component.
       history.push("/history");
     } else {
+      // If not updating/if params.id is not present, POST to the api+History component. After posting the current newWorkout, the states are set to empty strings so new values can be inputted.
       await axios.post(baseURL, { fields: newWorkout }, config);
       setExercise("");
       setSets("");
@@ -54,6 +61,7 @@ function Form(props) {
       setRest("");
       setWeight("");
     }
+    //This renders when the prevtogglefetch's bool val changes. Which will be everytime I need to render.
     props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
   };
 
@@ -61,7 +69,6 @@ function Form(props) {
     <>
       <div className="title">
         <h1>Create a Workout</h1>
-        {}
       </div>
       <form className="form" onSubmit={handleSubmit}>
         <input
