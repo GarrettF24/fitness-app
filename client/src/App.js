@@ -8,6 +8,7 @@ import { Route } from "react-router-dom";
 import History from "./components/History";
 import SocialMedia from "./components/SocialMedia";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SignUp from "./components/SignUp";
 
 function App() {
   const [workouts, setWorkouts] = useState([]);
@@ -31,6 +32,9 @@ function App() {
       </Route>
       <Route path="/update/:id">
         <Form workouts={workouts} setToggleFetch={setToggleFetch} />
+      </Route>
+      <Route path="/signup">
+        <SignUp />
       </Route>
       <SocialMedia />
     </>

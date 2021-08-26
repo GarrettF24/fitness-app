@@ -52,3 +52,12 @@ svg {
   color: white;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 600px) {
+  #sign-in {
+    width: 50px;
+    font-size: x-small;
+    height: 35px;
+    margin-left: -10px;
+  }
+}
