@@ -56,7 +56,7 @@ function History(props) {
                 </tr>
               </thead>
               <tbody>
-                {/* Each row is equal to the value of each of the table heading keys. */}
+                {/* Each row is equal to the value of the TableRow td's. */}
                 {table.map((row) => (
                   <TableRow row={row} />
                 ))}
