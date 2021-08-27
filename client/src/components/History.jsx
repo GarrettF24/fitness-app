@@ -40,7 +40,7 @@ function History(props) {
       });
     });
     //sets the tableInfo state to the values of the tableObj
-    //next we set tableInfo state w/ just the vals of the tableObj(arr of arrs)
+    //next tableInfo state is set w/ just the vals of the tableObj(arr of arrs)
     setTableInfo(Object.values(tableObj));
     //rerenders if workouts is present.
   }, [workouts]);
