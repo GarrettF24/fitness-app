@@ -2,6 +2,7 @@ import "./History.css";
 import { Table } from "react-bootstrap";
 import TableRow from "../components/TableRow";
 import { useState, useEffect } from "react";
+import TimeTitle from "./TimeTitle";
 
 function History(props) {
   const [tableInfo, setTableInfo] = useState([]);
@@ -17,10 +18,20 @@ function History(props) {
       ),
     ];
 
+    dates.sort((a, b) => {
+      const dayValueA = a.split("-")[2];
+      const monthValueA = a.split("-")[1];
+      const dayValueB = b.split("-")[2];
+      const monthValueB = b.split("-")[1];
+
+      a = Number(dayValueA) + Number(monthValueA) * 100;
+      b = Number(dayValueB) + Number(monthValueB) * 100;
+      return b - a;
+    });
+
     const tableObj = {};
     dates.forEach((date) => {
       //Creates key of date, filtering thru W/O only bringing back objects that match date.
-      //map thru unique arr dates, feed the empty tableObj a key of that date and val an arr of objs that match date.
       //Next map thru the arr of unique dates to feed the empty obj (tableObj) both a key of dates and an arr of objs w/ matching
       // dates as its value
       tableObj[date] = workouts.filter((workout) => {
@@ -44,10 +55,7 @@ function History(props) {
       <div className="tableDiv">
         {tableInfo.map((table) => (
           <div className="date-table-container">
-            <h4>
-              {table[0].createdTime.split("T")[0]}
-              <div className="checkbox">{/* <input type="checkbox" /> */}</div>
-            </h4>
+            <TimeTitle table={table} />
             <Table striped bordered hover>
               <thead>
                 <tr>
