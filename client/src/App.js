@@ -17,7 +17,6 @@ function App() {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const resp = await axios.get(baseURL, config);
-      console.log(resp.data);
       setWorkouts(resp.data.records);
     };
     fetchWorkouts();

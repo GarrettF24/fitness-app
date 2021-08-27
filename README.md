@@ -12,7 +12,7 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 ## Component Hierarchy
 
-![Component Hierarchy](./ComponentHierarchy.png)
+![Component Hierarchy](./ComponentHierarchy1.png)
 
 ## API and Data Sample
 
