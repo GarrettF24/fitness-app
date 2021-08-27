@@ -132,7 +132,7 @@ The fitness-app is a simple tool to help users with staying motivated with their
 
 ### Strengths:
 
-I feel condifent with conditional logic.
+I feel confident with conditional logic.
 
 ### Weaknesses:
 
