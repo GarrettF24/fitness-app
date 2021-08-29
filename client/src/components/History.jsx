@@ -7,7 +7,6 @@ import TimeTitle from "./TimeTitle";
 function History(props) {
   const [tableInfo, setTableInfo] = useState([]);
   const { workouts } = props;
-
   useEffect(() => {
     // This creates an arr of unique dates
     const dates = [
@@ -26,6 +25,7 @@ function History(props) {
 
       a = Number(dayValueA) + Number(monthValueA) * 100;
       b = Number(dayValueB) + Number(monthValueB) * 100;
+
       return b - a;
     });
 

@@ -21,6 +21,7 @@ function SignUp(props) {
           Submit
         </Button>
       </Form>
+       
     </>
   );
 }

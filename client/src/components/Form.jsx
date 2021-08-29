@@ -5,11 +5,19 @@ import { useParams, useHistory } from "react-router-dom";
 
 function Form(props) {
   //setState here
-  const [exercise, setExercise] = useState("");
-  const [sets, setSets] = useState("");
-  const [reps, setReps] = useState("");
-  const [rest, setRest] = useState("");
-  const [weight, setWeight] = useState("");
+  // const [exercise, setExercise] = useState("");
+  // const [sets, setSets] = useState("");
+  // const [reps, setReps] = useState("");
+  // const [rest, setRest] = useState("");
+  // const [weight, setWeight] = useState("");
+  const [state, setState] = useState({
+    exercise: "",
+    sets: "",
+    reps: "",
+    rest: "",
+    weight: "",
+  });
+
   const params = useParams();
   let history = useHistory();
 
@@ -22,25 +30,37 @@ function Form(props) {
       );
       //If there is a workoutToEdit the states will equal the current values and user can update the state from there.
       if (workoutToEdit) {
-        setExercise(workoutToEdit.fields.exercise);
-        setSets(workoutToEdit.fields.sets);
-        setReps(workoutToEdit.fields.reps);
-        setRest(workoutToEdit.fields.rest);
-        setWeight(workoutToEdit.fields.weight);
+        // setExercise(workoutToEdit.fields.exercise);
+        // setSets(workoutToEdit.fields.sets);
+        // setReps(workoutToEdit.fields.reps);
+        // setRest(workoutToEdit.fields.rest);
+        // setWeight(workoutToEdit.fields.weight);
+        setState({
+          ...state,
+          exercise: workoutToEdit.fields.exercise,
+          sets: workoutToEdit.fields.sets,
+          reps: workoutToEdit.fields.reps,
+          rest: workoutToEdit.fields.rest,
+          weight: workoutToEdit.fields.weight,
+        });
       }
     }
     //useEffect will be triggered and Form will rerender when params.id and props.workout changes.
   }, [params.id, props.workouts]);
 
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setState({
+      ...state,
+      [e.target.name]: value,
+    });
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     // onSubmit the newWorkout is created with each of the below getting a value that was assigned in the form.
     const newWorkout = {
-      exercise,
-      sets,
-      reps,
-      rest,
-      weight,
+      ...state,
     };
     //if params.id value is true(present)
     if (params.id) {
@@ -55,11 +75,14 @@ function Form(props) {
     } else {
       // If not updating/if params.id is not present, POST to the api+History component. After posting the current newWorkout, the states are set to empty strings so new values can be inputted.
       await axios.post(baseURL, { fields: newWorkout }, config);
-      setExercise("");
-      setSets("");
-      setReps("");
-      setRest("");
-      setWeight("");
+      setState({
+        ...state,
+        exercise: "",
+        sets: "",
+        reps: "",
+        rest: "",
+        weight: "",
+      });
     }
     //This renders when the prevtogglefetch's bool val changes. Which will be everytime I need to render.
     props.setToggleFetch((prevToggleFetch) => !prevToggleFetch);
@@ -74,37 +97,42 @@ function Form(props) {
         <input
           placeholder="Exercise"
           id="exercise"
-          value={exercise}
+          value={state.exercise}
+          name="exercise"
           type="text"
-          onChange={(e) => setExercise(e.target.value)}
+          onChange={handleChange}
         />
         <input
           placeholder="Sets"
+          name="sets"
           id="sets"
-          value={sets}
+          value={state.sets}
           type="text"
-          onChange={(e) => setSets(e.target.value)}
+          onChange={handleChange}
         />
         <input
           placeholder="Reps"
+          name="reps"
           id="reps"
-          value={reps}
+          value={state.reps}
           type="text"
-          onChange={(e) => setReps(e.target.value)}
+          onChange={handleChange}
         />
         <input
           placeholder="Rest"
+          name="rest"
           id="rest"
-          value={rest}
+          value={state.rest}
           type="text"
-          onChange={(e) => setRest(e.target.value)}
+          onChange={handleChange}
         />
         <input
           placeholder="Weight"
+          name="weight"
           id="weight"
-          value={weight}
+          value={state.weight}
           type="text"
-          onChange={(e) => setWeight(e.target.value)}
+          onChange={handleChange}
         />
         <button type="submit">Create Workout</button>
       </form>
