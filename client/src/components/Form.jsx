@@ -5,11 +5,6 @@ import { useParams, useHistory } from "react-router-dom";
 
 function Form(props) {
   //setState here
-  // const [exercise, setExercise] = useState("");
-  // const [sets, setSets] = useState("");
-  // const [reps, setReps] = useState("");
-  // const [rest, setRest] = useState("");
-  // const [weight, setWeight] = useState("");
   const [state, setState] = useState({
     exercise: "",
     sets: "",
@@ -30,11 +25,6 @@ function Form(props) {
       );
       //If there is a workoutToEdit the states will equal the current values and user can update the state from there.
       if (workoutToEdit) {
-        // setExercise(workoutToEdit.fields.exercise);
-        // setSets(workoutToEdit.fields.sets);
-        // setReps(workoutToEdit.fields.reps);
-        // setRest(workoutToEdit.fields.rest);
-        // setWeight(workoutToEdit.fields.weight);
         setState({
           ...state,
           exercise: workoutToEdit.fields.exercise,
