@@ -35,7 +35,7 @@ function Form(props) {
         });
       }
     }
-    //useEffect will be triggered and Form will rerender when params.id and props.workout changes.
+    //useEffect will be triggered and Form will rerender when params.id and props.workout changes.re
   }, [params.id, props.workouts]);
 
   const handleChange = (e) => {

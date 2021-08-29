@@ -1,5 +1,5 @@
 import "./History.css";
-import { Table } from "react-bootstrap";
+import { Table, Card } from "react-bootstrap";
 import TableRow from "../components/TableRow";
 import { useState, useEffect } from "react";
 import TimeTitle from "./TimeTitle";
@@ -55,21 +55,23 @@ function History(props) {
       <div className="tableDiv">
         {tableInfo.map((table) => (
           <div className="date-table-container">
-            <TimeTitle table={table} />
-            <Table striped bordered hover>
-              <thead>
-                <tr>
-                  {heading.map((head) => (
-                    <th>{head}</th>
+            <Card id="card" body>
+              <TimeTitle table={table} />
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    {heading.map((head) => (
+                      <th>{head}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {table.map((row) => (
+                    <TableRow row={row} />
                   ))}
-                </tr>
-              </thead>
-              <tbody>
-                {table.map((row) => (
-                  <TableRow row={row} />
-                ))}
-              </tbody>
-            </Table>
+                </tbody>
+              </Table>
+            </Card>
           </div>
         ))}
       </div>

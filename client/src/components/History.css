@@ -60,6 +60,12 @@ tr a {
   font-size: 0.7em;
   flex: display;
   border: 1px solid white;
+  border-radius: 25px;
+}
+
+#card {
+  background-color: rgb(47, 47, 47);
+  border-radius: 20px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -90,7 +96,7 @@ tr a {
     flex-direction: column;
     width: 10%;
     font-size: xx-small;
-    margin-left: 45px;
+    margin: 0px;
   }
 
   .workouts {
@@ -112,5 +118,9 @@ tr a {
 
   .tableDiv h4 {
     font-size: small;
+  }
+
+  #card {
+    margin: 5px;
   }
 }
